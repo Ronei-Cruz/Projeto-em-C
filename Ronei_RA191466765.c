@@ -19,7 +19,6 @@ void cabecalho()
 {
 	system("cls");
 	printf("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-\n");
-	printf("\nRONEI DIEGO ALMEIDA CRUZ	-	RA:19146676-5\n");
 	printf("CURSO: ENGENHARIA DE SOFTWARE\n");
 	printf("ATIVIDADE MAPA\n");
 	printf("\n-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-\n");
@@ -44,7 +43,7 @@ int main(void)
 		printf("[3] - Revistas Cadastradas\n");
 		printf("[4] - Localizacao Livros/Revistas\n");
 		printf("[5] - Sair\n\n");
-		printf("Escolha uma opÁ„o: ");
+		printf("Escolha uma op√ß√£o: ");
 		fflush(stdin);
 		scanf("%d", &escolha);
 		system("cls");
@@ -87,7 +86,7 @@ int main(void)
 					continue;
 				}
 				cabecalho();
-				printf("\n\tOpÁ„o Invalida!\n");
+				printf("\n\tOp√ß√£o Invalida!\n");
 				printf("\nPressine uma tecla para voltar ao MENU!\n");
 				getch();
 			break;
@@ -114,7 +113,7 @@ void cadastrar()
 	if (arquivo == NULL)
 	{
 		cabecalho();
-		printf("\nArquivo n„o encontardo!\n");
+		printf("\nArquivo n√£o encontardo!\n");
 	}
 	else if(arquivo != NULL);
 	{
@@ -131,7 +130,7 @@ void cadastrar()
 				if ((ddsc.tipo != 1) && (ddsc.tipo != 2))
 				{
 					cabecalho();
-					printf("\n\t\tOP«√O INV¡LIDA!\n");
+					printf("\n\t\tOP√á√ÉO INV√ÅLIDA!\n");
 					printf("\n");
 					system("Pause");
 					system("cls");
@@ -149,7 +148,7 @@ void cadastrar()
 				if ((ddsc.caixa !=1 ) && (ddsc.caixa != 2) && (ddsc.caixa !=  3))
 				{
 					cabecalho();
-					printf("\n\t\tOP«√O INV¡LIDA!\n");
+					printf("\n\t\tOP√á√ÉO INV√ÅLIDA!\n");
 					printf("\n");
 					system("Pause");
 					system("cls");
@@ -169,7 +168,7 @@ void cadastrar()
 			fflush(stdin);
 			gets(ddsc.editora);			
 			
-			printf("EDI«√O    : ");
+			printf("EDI√á√ÉO    : ");
 			fflush(stdin);
 			scanf("%d", &ddsc.ano);
 			
@@ -203,7 +202,7 @@ void listarLivros()
 	if (arquivo == NULL)
 	{
 		cabecalho();
-		printf("\n\tArquivo n„o encontardo!\n");
+		printf("\n\tArquivo n√£o encontardo!\n");
 	}
 	else
 	{
@@ -219,7 +218,7 @@ void listarLivros()
 				printf("  OBRA      : %s\n", ddsc.titulo_obra);
 				printf("  AUTOR     : %s\n", ddsc.autor);
 				printf("  EDITORA   : %s\n", ddsc.editora);
-				printf("  EDI«√O    : %d\n", ddsc.ano);
+				printf("  EDI√á√ÉO    : %d\n", ddsc.ano);
 				printf("  ISBN      : %d\n", ddsc.isbn);
 				printf("  QUANTIDADE: %d\n", ddsc.quantidade);
 				printf("---------------------------------------------|\n");
@@ -245,7 +244,7 @@ void listarRevistas()
 	if (arquivo == NULL)
 	{
 		cabecalho();
-		printf("\n\tArquivo n„o encontardo!\n");	
+		printf("\n\tArquivo n√£o encontardo!\n");	
 	}
 	else
 	{
@@ -261,7 +260,7 @@ void listarRevistas()
 				printf("  OBRA      : %s\n", ddsc.titulo_obra);
 				printf("  AUTOR     : %s\n", ddsc.autor);
 				printf("  EDITORA   : %s\n", ddsc.editora);
-				printf("  EDI«√O    : %d\n", ddsc.ano);
+				printf("  EDI√á√ÉO    : %d\n", ddsc.ano);
 				printf("  ISBN      : %d\n", ddsc.isbn);
 				printf("  QUANTIDADE: %d\n", ddsc.quantidade);
 				printf("---------------------------------------------|\n");
@@ -293,7 +292,7 @@ void listarCaixa()
 	if(arquivo == NULL)
 	{
 		cabecalho();
-		printf("\n\tArquivo n„o encontardo!\n");
+		printf("\n\tArquivo n√£o encontardo!\n");
 	}
 	else if (arquivo != NULL)
 	{
@@ -315,7 +314,7 @@ void listarCaixa()
 				{	
 					printf(" > OBRA      : %s\n", ddsc.titulo_obra);
 					printf(" > AUTOR     : %s\n", ddsc.autor);
-					printf(" > EDI«√O    : %d\n", ddsc.ano);
+					printf(" > EDI√á√ÉO    : %d\n", ddsc.ano);
 					printf(" > QUANTIDADE: %d\n", ddsc.quantidade);
 					int tipo = ddsc.tipo;
 					if (tipo == 1)
@@ -346,7 +345,7 @@ void listarCaixa()
 				{
 					printf(" > OBRA      : %s\n", ddsc.titulo_obra);
 					printf(" > AUTOR     : %s\n", ddsc.autor);
-					printf(" > EDI«√O    : %d\n", ddsc.ano);
+					printf(" > EDI√á√ÉO    : %d\n", ddsc.ano);
 					printf(" > QUANTIDADE: %d\n", ddsc.quantidade);
 					int tipo = ddsc.tipo;
 					if (tipo == 1)
@@ -377,7 +376,7 @@ void listarCaixa()
 				{
 					printf(" > OBRA      : %s\n", ddsc.titulo_obra);
 					printf(" > AUTOR     : %s\n", ddsc.autor);
-					printf(" > EDI«√O    : %d\n", ddsc.ano);
+					printf(" > EDI√á√ÉO    : %d\n", ddsc.ano);
 					printf(" > QUANTIDADE: %d\n", ddsc.quantidade);
 					int tipo = ddsc.tipo;
 					if (tipo == 1)
@@ -398,7 +397,7 @@ void listarCaixa()
 		else
 		{
 			cabecalho();
-			printf("\n\tOP«√O INV¡LIDA!!");
+			printf("\n\tOP√á√ÉO INV√ÅLIDA!!");
 			getch();
 		}
 	}
